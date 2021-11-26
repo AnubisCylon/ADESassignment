@@ -1,0 +1,26 @@
+{
+  "name": "ades-netflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-error": "0.0.6",
+    "http-errors": "^1.8.0",
+    "inspirational-quotes": "^2.0.1",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "react": "^17.0.2"
+  }
+}

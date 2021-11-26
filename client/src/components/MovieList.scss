@@ -1,0 +1,106 @@
+.movieList{
+    display: flex;
+    text-align: left;
+    border: 100px;
+    font-size: small;
+    margin-left: 5px;
+    position: relative;
+    min-height: 180px;
+    // width: 225px;
+    // height: 300px;
+    
+  
+   
+   
+       .movies{
+        
+       
+        width: 250px;
+        img{
+            display: block;
+            position: relative;
+            /* margin-left: auto;
+            margin-right: auto; */
+            width: 225px;
+            height: 130px;
+            cursor: pointer;
+            margin-left: 20px;
+           
+            &:hover{
+                height: 169px;
+                width: 293px;
+                z-index: 20;
+                top: -20px;
+                //position: absolute;
+                
+               
+               
+               
+                transition:all 1s ease;
+                transform: translateX(-35px);
+               
+                -webkit-box-shadow: 10px 10px 12px -7px #ffffff, 5px 5px 15px 5px rgba(255, 255, 255, 0); 
+                box-shadow: 10px 10px 12px -7px #ffffff, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+                
+                
+            }
+           
+    
+         
+                
+            
+            
+        }
+        
+        .itemInfo{
+            
+            display:flex;
+            flex-direction: column;
+            padding: 5px;
+            color: white;
+            margin-left: 20px;
+            border-radius: white;
+            overflow-x: hidden;
+           
+          
+        }
+        
+        
+        // .posters{
+        //     height: 50px;
+        //     width: 100px;
+        //     overflow-x: scroll relative;
+          
+        // }
+        .titles{
+            font-weight: bold;
+        }
+        .desc{
+            display: absolute;
+            
+            .descW{
+                font-weight: bold;
+                
+            }
+        
+        }
+
+    
+    
+           
+      
+      
+   
+    }   
+}
+
+    
+
+h2{
+    color: white;
+    font-family: bold;
+    margin-left: 20px;
+}
+
+
+

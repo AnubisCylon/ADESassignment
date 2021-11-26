@@ -1,0 +1,31 @@
+
+.List{
+    width: 100%;
+    align-content: inherit;
+    position: relative;
+    .sliderArrow{
+        width:50px;
+        height: 140px;
+        
+        background-color: rgba(22,22,22,0.5);
+        color: white;
+        position: absolute;
+        z-index: 99;
+        top:0;
+        bottom: 0;
+        position: absolute;
+        cursor: pointer;
+
+            &.left {
+                left: 0;
+            }
+
+            &.right {
+                right:0;
+            
+                
+                
+            }
+        }
+    
+    }

@@ -1,0 +1,27 @@
+.navbar{
+    color: white;
+   
+    .container{
+        flex-flow: column;
+        .left{
+            display: flex;
+            align-items: center;
+       
+
+            img{
+                width:120px;
+                height: 63px;
+              }
+           span{
+                margin: 10px;
+            
+            }
+           
+        .right{
+            display: flex;
+            text-align: center;
+        }
+            
+        }
+    }
+}
