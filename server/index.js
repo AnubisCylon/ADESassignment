@@ -39,6 +39,6 @@ app.use((error, req, res, next) => {
 
 pool.connect()
 
-app.listen(5000, function() {
+app.listen(5000, '0.0.0.0', function() {
     console.log('Now listening on Gou-zen')
 })
