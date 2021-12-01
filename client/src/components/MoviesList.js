@@ -49,7 +49,7 @@ const MoviesList =({title, getReq})=> {
                <div className="itemInfo">
               <text className="titles">Title: {movie.movie_title}</text>
               <p className="desc"><div className="descW">Description:</div> {movie.movie_description}</p>
-              {/* <iframe width="225" height="130" src="" title="YouTube video player" frameborder="0" allowfullscreen></iframe> */}
+              <iframe width="225" height="130" src={movie.movie_video} title="YouTube video player" frameborder="0" allowfullscreen></iframe>
               </div>
              
             </div>

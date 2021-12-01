@@ -17,7 +17,7 @@ const pool = require('../database');
 
 router.post('/movie',async(req, res)=>{
     try {
-    const {title,description,genre,actors,year,duration,image,href} = req.body
+    const {title,description,genre,actors,year,duration,image,href,video} = req.body
     const movie = await pool.query(`INSERT INTO movie_tab(
         movie_title,
         movie_description,
@@ -26,9 +26,10 @@ router.post('/movie',async(req, res)=>{
         year_released,
         movie_length,
         movie_poster,
-        movie_href)
-        VALUES($1,$2,$3,$4,$5,$6,$7,$8) RETURNING * `,
-        [title,description,genre,actors,year,duration,image,href]
+        movie_href,
+        movie_video)
+        VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING * `,
+        [title,description,genre,actors,year,duration,image,href,video]
         )   
         
         res.json(movie.rows)
