@@ -39,6 +39,10 @@ app.use((error, req, res, next) => {
 
 pool.connect()
 
-app.listen(5000, '0.0.0.0', function() {
+let port = process.env.PORT
+if (port == null || port == "") {
+  port = 5000;
+}
+app.listen(port, function() {
     console.log('Now listening on Gou-zen')
 })
